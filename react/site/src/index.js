@@ -2,7 +2,6 @@ import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import './styles.css'
 
 import App from './InfoX/home'
 import DetalheProduto from './InfoX/detalheProduto'

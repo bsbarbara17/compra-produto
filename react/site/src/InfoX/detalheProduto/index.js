@@ -21,7 +21,6 @@ export default function DetalheProduto(props) {
 
         navigation.push('/carrinho');
     }
-}
 
     return (
         <Container>
