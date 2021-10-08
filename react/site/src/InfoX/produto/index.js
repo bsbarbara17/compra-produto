@@ -6,8 +6,8 @@ export default function Produto(props) {
     return (
         <Container>
             <img className="capa" src={props.info.imagem} alt="" />
-            <div className="titulo"> src={props.info.titulo} </div>
-            <div className="preco"> src={props.info.preco} </div>
+            <div className="titulo"> {props.info.titulo} </div>
+            <div className="preco"> {props.info.preco} </div>
 
             <Link to={{
                 pathname: '/detalhe',

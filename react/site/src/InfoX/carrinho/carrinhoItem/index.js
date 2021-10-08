@@ -9,7 +9,6 @@ export default function CarrinhoItem(props) {
 
     function alterarQtd(qtd) {
         setProduto({...produto, qtd})
-
         props.onUpdate(produto.id, qtd)
     }
 
@@ -31,12 +30,18 @@ export default function CarrinhoItem(props) {
             </div>
 
             <div className="preco">
-                <span>Qtd</span> <br />
+                <span>Preço unitário</span> <br /> 
                 {produto.preco}
+            </div>
+
+            <div className="qtd">
+                <span>Qtd</span> <br />
+                {produto.qtd}
             </div>
 
             <div className="remover"> <RemoverIcon onClick={remover} /> </div>
 
         </Container>
     )
+
 }

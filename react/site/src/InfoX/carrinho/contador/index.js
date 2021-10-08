@@ -48,19 +48,20 @@ export default function Contador(props) {
     useEffect(() => {
         props.onChange(qtd);
     }, [qtd])
+  
 
 
     return (
         <Container>
-            <div className="menos" onclick={decrementar}>
+            <div className="menos" onClick={decrementar}>
               -
             </div>
 
             <div className="quatidade">
-                {qtd}
+              {qtd}
             </div>
 
-            <div className="mais" onclick={incrementar}>
+            <div className="mais" onClick={incrementar}>
               +
             </div>
         </Container>

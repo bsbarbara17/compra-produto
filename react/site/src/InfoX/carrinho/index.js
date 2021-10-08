@@ -12,7 +12,7 @@ export default function Carrinho() {
     useEffect(carregarCarrinho, []);
 
     function carregarCarrinho() {
-        let carrinho = Cookie.get('carinho');
+        let carrinho = Cookie.get('carrinho');
         carrinho = carrinho !== undefined
                      ? JSON.parse(carrinho)
                      : [];
@@ -42,11 +42,11 @@ export default function Carrinho() {
             <Link to="/"> Voltar </Link>
 
             <div className="itens">
-                {produtos.map(item =>
-                    <CarrinhoItem key={item.id}
-                        info={item}
-                        onUpdate={alterarProduto}
-                        onRemove={removerProduto} />    
+                {produtos.map(item => 
+                    <CarrinhoItem key={item.id} 
+                        info={item} 
+                        onUpdate={alterarProduto} 
+                        onRemove={removerProduto} />
                 )}
             </div>
         </Container>
